@@ -1,0 +1,18 @@
+<div class=list2>
+  <h1><%=@task[:title]%></h1>
+  <p><%=@task[:details]%></p>
+  <label><input type="checkbox" class="form-control" <%= "checked" if @task.completed %>/><%="Completed"%></label>
+  <hr>
+  <%= link_to "List all tasks", tasks_path %>
+  <hr>
+  <%= link_to "Edit this task", edit_task_path %>
+
+
+</div>
+
+<!-- <div class=list2>
+  <h1><%= @task.title %></h1>
+  <p><%=@task.details%></p>
+
+</div>
+ -->
